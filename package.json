@@ -2,7 +2,7 @@
   "name": "@municipio/gatsby-starter-basic",
   "version": "0.0.0",
   "private": true,
-  "description": "Basic Gatbsy starter for Municipio",
+  "description": "Basic Gatsby starter for Municipio",
   "scripts": {
     "build": "yarn wp-generate-schema-fragments && NODE_OPTIONS='-r esm' gatsby build",
     "clean": "NODE_OPTIONS='-r esm' gatsby clean && yarn wp-generate-schema-fragments",

@@ -1,4 +1,4 @@
-# Basic Gatbsy starter for Municipio
+# Basic Gatsby starter for Municipio
 
 Gatsby starter that relies on
 [@municipio/gatsby-theme-basic](https://github.com/municipio-se/gatsby-theme-basic)
