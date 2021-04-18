@@ -1,0 +1,20 @@
+{
+  "name": "gatsby-theme-municipio-example-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Gatsby Theme Municipio example",
+  "scripts": {
+    "build": "yarn wp-generate-schema-fragments && NODE_OPTIONS='-r esm' gatsby build",
+    "clean": "NODE_OPTIONS='-r esm' gatsby clean && yarn wp-generate-schema-fragments",
+    "develop": "NODE_OPTIONS='-r esm' gatsby develop",
+    "serve": "NODE_OPTIONS='-r esm' gatsby serve",
+    "start": "NODE_OPTIONS='-r esm' gatsby develop",
+    "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments"
+  },
+  "dependencies": {
+    "@municipio/gatsby-theme-basic": "*",
+    "gatsby": "^3.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
