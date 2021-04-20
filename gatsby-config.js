@@ -9,6 +9,7 @@ export const siteMetadata = {
 };
 
 export const plugins = [
+  "gatsby-plugin-remove-serviceworker",
   {
     resolve: `@municipio/gatsby-theme-basic`,
     options: {
