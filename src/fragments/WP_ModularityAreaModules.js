@@ -6,7 +6,7 @@ export const query = graphql`
       columnWidth
       hidden
       key
-      node {
+      module: node {
         # ... on WP_ModContacts {
         #   ...WP_ModContacts
         # }

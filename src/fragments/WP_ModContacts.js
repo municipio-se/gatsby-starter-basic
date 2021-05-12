@@ -2,14 +2,6 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   fragment WP_ModContacts on WP_ModContacts {
-    id
-    title
-    hideTitle
-    contentType {
-      node {
-        name
-      }
-    }
     kontakter {
       compactMode
       contacts {

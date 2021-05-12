@@ -2,14 +2,6 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   fragment WP_ModPosts on WP_ModPosts {
-    id
-    title
-    hideTitle
-    contentType {
-      node {
-        name
-      }
-    }
     dataDisplay {
       postsDisplayAs
       postsFields
