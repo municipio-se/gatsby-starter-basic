@@ -16,16 +16,22 @@ export const query = graphql`
     }
     ... on WP_NodeWithContentEditor {
       content
+      contentMedia {
+        ...WP_ImageLarge
+      }
     }
+    # ... on WP_BlockEditorContentNode {
+    #   ...WP_BlocksForPage
+    # }
     ... on WP_NodeWithModularity {
       ...WP_ContentNodeModularityAreas
     }
     ... on WP_Page {
       ...WP_PageForPage
     }
-    # ... on WP_Post {
-    #   ...WP_PostForPage
-    # }
+    ... on WP_Post {
+      ...WP_PostForPage
+    }
     ... on WP_NodeWithFeaturedImage {
       featuredImage {
         node {

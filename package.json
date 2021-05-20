@@ -12,7 +12,7 @@
     "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments"
   },
   "dependencies": {
-    "@municipio/gatsby-theme-basic": "^0.4.1",
+    "@municipio/gatsby-theme-basic": "^0.5.0",
     "gatsby": "^3.3.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "react": "^17.0.2",

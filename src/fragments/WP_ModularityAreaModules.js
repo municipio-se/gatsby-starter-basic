@@ -7,6 +7,16 @@ export const query = graphql`
       hidden
       key
       module: node {
+        id
+        ... on WP_NodeWithTitle {
+          title
+        }
+        hideTitle
+        contentType {
+          node {
+            name
+          }
+        }
         # ... on WP_ModContacts {
         #   ...WP_ModContacts
         # }

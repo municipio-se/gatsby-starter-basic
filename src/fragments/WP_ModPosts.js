@@ -2,12 +2,12 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   fragment WP_ModPosts on WP_ModPosts {
-    dataDisplay {
+    modPostsDataDisplay {
       postsDisplayAs
       postsFields
       postsHighlight
     }
-    dataSource {
+    modPostsDataSource {
       postsDataSource
       postsCount
       archiveLink
@@ -34,7 +34,7 @@ export const query = graphql`
         }
       }
     }
-    posts(first: 50) {
+    contentNodes(first: 50) {
       nodes {
         ...WP_ContentNodeForModPosts
       }
