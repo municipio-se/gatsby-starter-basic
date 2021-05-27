@@ -16,10 +16,10 @@ export const query = graphql`
         permalink
         postContent
         image {
-          ...WP_ImageForCard
+          ...WP_ImageWide
         }
         postContentMedia {
-          ...WP_ImageForCard
+          ...WP_ImageWide
         }
       }
       postsDataPostType {
