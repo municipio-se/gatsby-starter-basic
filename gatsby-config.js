@@ -15,6 +15,10 @@ export const plugins = [
     options: {
       basePath: __dirname,
       fragmentsDir: `${__dirname}/src/fragments`,
+      i18next: {
+        defaultLanguage: 'sv',
+        languages: ['sv', 'en'],
+      },
       wp: {
         url: `${process.env.GATSBY_WORDPRESS_URL}/graphql`,
         refetchInterval: process.env.WORDPRESS_REFETCH_INTERVAL,
