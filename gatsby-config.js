@@ -25,9 +25,6 @@ export const plugins = [
       },
       // XXX: postcss.config.js doesn’t seem to load automatically
       postCss: { postcssOptions: require("./postcss.config")() },
-      compileES6Packages: {
-        modules: ["@whitespace/components"],
-      },
     },
   },
 ];
