@@ -5,10 +5,10 @@
   "description": "Basic Gatsby starter for Municipio",
   "scripts": {
     "build": "yarn wp-generate-schema-fragments && NODE_OPTIONS='-r esm' gatsby build",
-    "clean": "NODE_OPTIONS='-r esm' gatsby clean && yarn wp-generate-schema-fragments",
-    "develop": "NODE_OPTIONS='-r esm' gatsby develop",
+    "clean": "NODE_OPTIONS='-r esm' gatsby clean",
+    "dev": "yarn wp-generate-schema-fragments && NODE_OPTIONS='-r esm' gatsby develop --open",
     "serve": "NODE_OPTIONS='-r esm' gatsby serve",
-    "start": "NODE_OPTIONS='-r esm' gatsby develop",
+    "start": "yarn dev",
     "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments"
   },
   "dependencies": {
