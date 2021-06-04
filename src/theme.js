@@ -1,3 +1,3 @@
 export default theme;
 
-var theme = {}
+var theme = {};
