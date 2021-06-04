@@ -16,7 +16,6 @@
     "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments"
   },
   "dependencies": {
-    "babel-eslint": "^10.1.0",
     "@municipio/gatsby-theme-intranet": "^0.6.6",
     "gatsby": "^3.6.1",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
