@@ -4,5 +4,8 @@ export const query = graphql`
   fragment WP_PageForPage on WP_Page {
     isFrontPage
     modifiedGmt
+    pageAppearance {
+      template
+    }
   }
 `;
