@@ -2,10 +2,10 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   fragment WP_ModContacts on WP_ModContacts {
-    kontakter {
-      compactMode
+    modContactsOptions {
+      # compactMode
       contacts {
-        ... on WP_ModContacts_Kontakter_Contacts_Custom {
+        ... on WP_ModContacts_Modcontactsoptions_Contacts_Custom {
           address
           administrationUnit
           email
@@ -30,8 +30,8 @@ export const query = graphql`
           }
         }
       }
-      displayMode
-      displaySettings
+      # displayMode
+      # displaySettings
     }
   }
 `;
