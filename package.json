@@ -16,17 +16,17 @@
     "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments"
   },
   "dependencies": {
-    "@municipio/gatsby-theme-basic": "^0.6.6",
-    "gatsby": "^3.6.1",
+    "@municipio/gatsby-theme-basic": "^0.8.0",
+    "gatsby": "^3.7.2",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "eslint": "^7.27.0",
+    "eslint": "^7.29.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-react": "^7.24.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.1"
   }
 }
