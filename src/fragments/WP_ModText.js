@@ -7,8 +7,9 @@ export const query = graphql`
       ...WP_ImageMedium
     }
     modTextOptions {
-      fontSize
-      hideBoxFrame
+      # fontSize
+      # hideBoxFrame
+      theme
     }
   }
 `;
