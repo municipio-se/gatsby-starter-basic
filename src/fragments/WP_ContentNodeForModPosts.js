@@ -26,7 +26,7 @@ export const query = graphql`
     ... on WP_NodeWithFeaturedImage {
       featuredImage {
         node {
-          ...WP_ImageMedium
+          ...WP_ImageWide
         }
       }
     }
