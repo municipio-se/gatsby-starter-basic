@@ -2,3 +2,17 @@ publishedAt: Publicerad
 updatedAt: Uppdaterad
 author: Sidansvarig
 relatedPages: Relaterade sidor
+search:
+  facetLabels:
+    contentType:
+      any: Allt innehåll
+      page: Sidor
+      post: Inlägg
+    year:
+      any: Alla år
+    month:
+      any: Alla månader
+clearFilterLabel: Rensa filtrering
+page: Sida
+nextPage: Nästa sida
+previousPage: Föregående sida
