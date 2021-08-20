@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   fragment WP_SearchSettingsForHook on WP {
-    search {
+    acfOptionsSearch {
       searchDisplay {
         emptySearchResultMessage
         searchPlaceholderText
