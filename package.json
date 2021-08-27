@@ -4,14 +4,14 @@
   "private": true,
   "description": "Basic Gatsby starter for Municipio",
   "scripts": {
-    "build": "yarn wp-generate-schema-fragments && NODE_OPTIONS='-r esm' gatsby build",
-    "clean": "NODE_OPTIONS='-r esm' gatsby clean",
-    "dev": "yarn wp-generate-schema-fragments && NODE_OPTIONS='-r esm' gatsby develop --open",
+    "build": "yarn wp-generate-schema-fragments && cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
+    "clean": "cross-env NODE_OPTIONS=\"-r esm\" gatsby clean",
+    "dev": "yarn wp-generate-schema-fragments && cross-env NODE_OPTIONS=\"-r esm\" gatsby develop --open",
     "format": "run-s format:*",
     "format:eslint": "eslint --fix '**/*.{js,jsx}' || true",
     "format:prettier": "prettier --write '**/*.{js,jsx,json,md,mdx,yml,html,css}'",
     "lint": "eslint '**/*.{js,jsx}'",
-    "serve": "NODE_OPTIONS='-r esm' gatsby serve",
+    "serve": "cross-env NODE_OPTIONS=\"-r esm\" gatsby serve",
     "start": "yarn dev",
     "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments"
   },
@@ -23,6 +23,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.24.1",
     "eslint-plugin-react": "^7.24.0",
