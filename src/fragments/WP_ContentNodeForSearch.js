@@ -17,6 +17,9 @@ export const query = graphql`
     ... on WP_NodeWithContentEditor {
       content
     }
+    ... on WP_NodeWithModularity {
+      ...WP_ContentNodeModularityAreasForSearch
+    }
     ... on WP_Page {
       ...WP_PageForSearch
     }
