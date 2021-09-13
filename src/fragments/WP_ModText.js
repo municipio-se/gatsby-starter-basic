@@ -7,8 +7,7 @@ export const query = graphql`
       ...WP_ImageMedium
     }
     modTextOptions {
-      # fontSize
-      # hideBoxFrame
+      hideBoxFrame
       theme
     }
   }

@@ -15,7 +15,11 @@ export const query = graphql`
       archiveLink
       data {
         postTitle
-        permalink
+        link {
+          target
+          title
+          url
+        }
         postContent
         image {
           ...WP_ImageWide
@@ -28,6 +32,7 @@ export const query = graphql`
       postsDataPostType {
         name
         hasArchive
+        uri
         labels {
           allItems
           archives

@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   fragment WP_ModFileslist on WP_ModFileslist {
-    files {
+    modFileslistOptions {
       fileList {
         file {
           title

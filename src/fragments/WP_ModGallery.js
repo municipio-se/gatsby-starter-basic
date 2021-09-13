@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   fragment WP_ModGallery on WP_ModGallery {
-    gallery {
+    modGalleryOptions {
       modGalleryImages {
         ...WP_ImageMedium
       }
