@@ -42,6 +42,9 @@ export const query = graphql`
         }
       }
     }
+    modPostsDataFiltering {
+      frontEndTaxFiltering
+    }
     contentNodes(first: 50) {
       nodes {
         ...WP_ContentNodeForModPosts
