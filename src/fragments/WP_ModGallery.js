@@ -7,5 +7,9 @@ export const query = graphql`
         ...WP_ImageMedium
       }
     }
+    settings {
+      display
+      pauseOnHover
+    }
   }
 `;
