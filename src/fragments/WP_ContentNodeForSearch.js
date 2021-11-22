@@ -6,6 +6,7 @@ export const query = graphql`
     databaseId
     uri
     dateGmt
+    archiveDatesGmt
     contentType {
       node {
         name
