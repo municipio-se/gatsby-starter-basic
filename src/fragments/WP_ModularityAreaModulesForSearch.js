@@ -7,9 +7,9 @@ export const query = graphql`
       # hidden
       # key
       node {
-        # ... on WP_ModContacts {
-        #   ...WP_ModContactsForSearch
-        # }
+        ... on WP_ModContacts {
+          ...WP_ModContactsForSearch
+        }
         # ... on WP_ModFileslist {
         #   ...WP_ModFileslistForSearch
         # }
@@ -19,12 +19,12 @@ export const query = graphql`
         # ... on WP_ModImage {
         #   ...WP_ModImageForSearch
         # }
-        # ... on WP_ModNotice {
-        #   ...WP_ModNoticeForSearch
-        # }
-        # ... on WP_ModPosts {
-        #   ...WP_ModPostsForSearch
-        # }
+        ... on WP_ModNotice {
+          ...WP_ModNoticeForSearch
+        }
+        ... on WP_ModPosts {
+          ...WP_ModPostsForSearch
+        }
         ... on WP_ModText {
           ...WP_ModTextForSearch
         }

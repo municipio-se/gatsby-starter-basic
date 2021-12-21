@@ -11,10 +11,5 @@ export const query = graphql`
         postContent
       }
     }
-    contentNodes(first: 50) {
-      nodes {
-        ...WP_ContentNodeForModPosts
-      }
-    }
   }
 `;

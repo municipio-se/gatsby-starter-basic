@@ -5,7 +5,7 @@ export const query = graphql`
     acfOptionsThemeOptions {
       colorScheme {
         brandColors {
-          key
+          label
           value
         }
       }
