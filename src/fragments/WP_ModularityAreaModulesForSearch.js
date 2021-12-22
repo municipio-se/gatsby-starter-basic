@@ -11,9 +11,9 @@ export const query = graphql`
         ... on WP_ModContacts {
           ...WP_ModContactsForSearch
         }
-        # ... on WP_ModFileslist {
-        #   ...WP_ModFileslistForSearch
-        # }
+        ... on WP_ModFileslist {
+          ...WP_ModFileslistForSearch
+        }
         # ... on WP_ModGallery {
         #   ...WP_ModGalleryForSearch
         # }
