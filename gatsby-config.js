@@ -20,7 +20,7 @@ export const plugins = [
         languages: ["sv", "en"],
       },
       wp: {
-        url: `${process.env.GATSBY_WORDPRESS_URL}/graphql`,
+        url: process.env.GATSBY_WORDPRESS_URL,
         refetchInterval: process.env.WORDPRESS_REFETCH_INTERVAL,
         nodesPerFetch: Number(process.env.WORDPRESS_NODES_PER_FETCH),
       },
