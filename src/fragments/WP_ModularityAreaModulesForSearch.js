@@ -3,11 +3,18 @@ import { graphql } from "gatsby";
 export const query = graphql`
   fragment WP_ModularityAreaModulesForSearch on WP_NodeModularityArea {
     modules {
-      ... on WP_NodeWithTitle {
-        title
-      }
-      hideTitle
-      node {
+      hidden
+      module: node {
+        # id
+        ... on WP_NodeWithTitle {
+          title
+        }
+        hideTitle
+        # contentType {
+        #   node {
+        #     name
+        #   }
+        # }
         ... on WP_ModContacts {
           ...WP_ModContactsForSearch
         }
