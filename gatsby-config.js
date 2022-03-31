@@ -1,4 +1,4 @@
-import { loadConfig } from "@municipio/gatsby-theme-basic";
+import { loadConfig, truey } from "@municipio/gatsby-theme-basic";
 
 loadConfig();
 
@@ -26,6 +26,16 @@ export const plugins = [
       },
       // XXX: postcss.config.js doesn’t seem to load automatically
       postCss: { postcssOptions: require("./postcss.config")() },
+    },
+  },
+  {
+    resolve: "@whitespace/gatsby-plugin-matomo",
+    options: {
+      routeChangeEventName: false,
+      trackPageViews: true,
+      mtmContainerId: process.env.MATOMO_CONTAINER_ID,
+      mtmHost: process.env.MATOMO_HOST,
+      includeInDevelopment: truey(process.env.MATOMO_INCLUDE_IN_DEV),
     },
   },
 ];
