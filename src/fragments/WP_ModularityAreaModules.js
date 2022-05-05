@@ -20,9 +20,9 @@ export const query = graphql`
         ... on WP_ModContacts {
           ...WP_ModContacts
         }
-        ... on WP_ModFeedback {
-          ...WP_ModFeedback
-        }
+        # ... on WP_ModFeedback {
+        #   ...WP_ModFeedback
+        # }
         ... on WP_ModFileslist {
           ...WP_ModFileslist
         }
