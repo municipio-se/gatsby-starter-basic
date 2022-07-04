@@ -25,6 +25,34 @@ export const plugins = [
         refetchInterval: process.env.WORDPRESS_REFETCH_INTERVAL,
         nodesPerFetch: Number(process.env.WORDPRESS_NODES_PER_FETCH),
       },
+      search: {
+        paths: ["sok", "en/search"],
+      },
+      siteIndex: {
+        includePage: ({ page }) =>
+          page.context.contentType && page.context.contentType.name === "page",
+        localizations: {
+          sv: {
+            basePath: "/innehall",
+            alphabet: Array.from("abcdefghijklmnopqrstuvwxyzåäö"),
+            restInitial: {
+              path: "/övriga-sidor",
+              title: "Övriga sidor",
+              label: "#",
+            },
+          },
+          en: {
+            basePath: "/content",
+            alphabet: Array.from("abcdefghijklmnopqrstuvwxyz"),
+            restInitial: {
+              path: "/other-pages",
+              title: "Other pages",
+              label: "#",
+            },
+          },
+        },
+      },
+      enableSEO: true,
       // XXX: postcss.config.js doesn’t seem to load automatically
       postCss: { postcssOptions: require("./postcss.config")() },
     },
