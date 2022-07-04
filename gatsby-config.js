@@ -3,9 +3,10 @@ import { loadConfig, truey } from "@municipio/gatsby-theme-basic";
 loadConfig();
 
 export const siteMetadata = {
+  author: `Whitespace`,
+  description: `Starter site using Wordpress and Gatsby`,
   siteUrl: process.env.GATSBY_SITE_URL,
   title: `Wordpress Starter`,
-  description: `Starter site using Wordpress and Gatsby`,
 };
 
 export const plugins = [
