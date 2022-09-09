@@ -1,4 +1,24 @@
-import { loadConfig, truey } from "@municipio/gatsby-theme-basic";
+import { falsey, loadConfig, truey } from "@municipio/gatsby-theme-basic";
+import { createProxyMiddleware } from "http-proxy-middleware";
+
+export const developMiddleware = (app) => {
+  if (process.env.API_PROXY) {
+    app.use(
+      "/api",
+      createProxyMiddleware({
+        target: process.env.API_PROXY,
+        secure: falsey(process.env.API_PROXY_INSECURE),
+        changeOrigin: true,
+        followRedirects: false,
+        // subscribe to http-proxy's error event
+        onError: function onError(err, req, res) {
+          res.writeHead(500, { "Content-Type": "text/plain" });
+          res.end("Something went wrong.");
+        },
+      }),
+    );
+  }
+};
 
 loadConfig();
 

@@ -20,6 +20,7 @@
     "@whitespace/gatsby-plugin-matomo": "^1.0.2",
     "gatsby": "^3.14.2",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
+    "http-proxy-middleware": "^2.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
