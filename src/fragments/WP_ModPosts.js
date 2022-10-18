@@ -27,6 +27,12 @@ export const query = graphql`
         postContentMedia {
           ...WP_ImageWide
         }
+        postContentModularityModules(first: 1000) {
+          nodes {
+            databaseId
+            ...WP_ModularityModuleForModule
+          }
+        }
         theme
       }
       postsDataPostType {

@@ -6,6 +6,12 @@ export const query = graphql`
     contentMedia {
       ...WP_ImageMedium
     }
+    contentModularityModules(first: 1000) {
+      nodes {
+        databaseId
+        ...WP_ModularityModuleForModule
+      }
+    }
     modTextOptions {
       hideBoxFrame
       theme

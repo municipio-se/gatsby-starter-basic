@@ -16,6 +16,15 @@ export const query = graphql`
     }
     ... on WP_NodeWithContentEditor {
       content
+      contentMedia {
+        ...WP_ImageLarge
+      }
+      contentModularityModules(first: 1000) {
+        nodes {
+          databaseId
+          ...WP_ModularityModuleForModule
+        }
+      }
     }
     # ... on WP_Page {
     #   ...WP_PageForModPosts
