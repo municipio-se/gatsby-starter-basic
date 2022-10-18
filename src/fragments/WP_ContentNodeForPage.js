@@ -26,6 +26,12 @@ export const query = graphql`
       contentMedia {
         ...WP_ImageLarge
       }
+      contentModularityModules(first: 1000) {
+        nodes {
+          databaseId
+          ...WP_ModularityModule
+        }
+      }
     }
     # ... on WP_BlockEditorContentNode {
     #   ...WP_BlocksForPage
