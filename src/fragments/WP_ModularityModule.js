@@ -12,21 +12,21 @@ export const query = graphql`
         name
       }
     }
-    ... on WP_ModContacts {
-      ...WP_ModContacts
-    }
-    ... on WP_ModFeedback {
-      ...WP_ModFeedback
-    }
-    ... on WP_ModFileslist {
-      ...WP_ModFileslist
-    }
-    ... on WP_ModGallery {
-      ...WP_ModGallery
-    }
-    ... on WP_ModIframe {
-      ...WP_ModIframe
-    }
+    # ... on WP_ModContacts {
+    #   ...WP_ModContacts
+    # }
+    # ... on WP_ModFeedback {
+    #   ...WP_ModFeedback
+    # }
+    # ... on WP_ModFileslist {
+    #   ...WP_ModFileslist
+    # }
+    # ... on WP_ModGallery {
+    #   ...WP_ModGallery
+    # }
+    # ... on WP_ModIframe {
+    #   ...WP_ModIframe
+    # }
     ... on WP_ModImage {
       ...WP_ModImage
     }
@@ -39,8 +39,8 @@ export const query = graphql`
     ... on WP_ModText {
       ...WP_ModText
     }
-    ... on WP_ModTable {
-      ...WP_ModTable
-    }
+    # ... on WP_ModTable {
+    #   ...WP_ModTable
+    # }
   }
 `;
