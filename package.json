@@ -18,7 +18,7 @@
   "dependencies": {
     "@wsui/base": "^0.2.12",
     "@wsui/theme-standard": "^0.2.12",
-    "@municipio/gatsby-theme-basic": "^1.4.0-next.1",
+    "@municipio/gatsby-theme-basic": "^1.4.0-next.2",
     "@whitespace/gatsby-plugin-cookie-consent": "^1.4.0-next.9",
     "@whitespace/gatsby-plugin-matomo": "^1.4.0-next.9",
     "gatsby": "^3.14.2",
