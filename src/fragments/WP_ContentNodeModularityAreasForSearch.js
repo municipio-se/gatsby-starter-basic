@@ -5,8 +5,8 @@ export const query = graphql`
     contentArea: modularityArea(area: CONTENT_AREA) {
       ...WP_ModularityAreaModulesForSearch
     }
-    sliderArea: modularityArea(area: SLIDER_AREA) {
-      ...WP_ModularityAreaModulesForSearch
-    }
+    # sliderArea: modularityArea(area: SLIDER_AREA) {
+    #   ...WP_ModularityAreaModulesForSearch
+    # }
   }
 `;
