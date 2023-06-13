@@ -4,18 +4,19 @@
   "private": true,
   "description": "Basic Gatsby starter for Municipio",
   "scripts": {
-    "build": "yarn wp-generate-schema-fragments && gatsby build",
+    "build": "pnpm wp-generate-schema-fragments && gatsby build",
     "clean": "gatsby clean",
-    "dev": "yarn wp-generate-schema-fragments && gatsby develop --open",
+    "dev": "pnpm wp-generate-schema-fragments && gatsby develop --open",
     "format": "run-s format:*",
     "format:eslint": "eslint --fix '**/*.{js,jsx}' || true",
     "format:prettier": "prettier --write '**/*.{js,jsx,json,md,mdx,yml,html,css}'",
     "lint": "eslint '**/*.{js,jsx}'",
     "serve": "gatsby serve",
-    "start": "yarn dev",
+    "start": "pnpm dev",
     "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments"
   },
   "dependencies": {
+    "@emotion/css": "^11.11.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@jfrk/react-heading-levels": "^1.0.0",
